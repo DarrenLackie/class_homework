@@ -44,6 +44,24 @@ print(same_numbers)
 #    
 #    So [11, 6, 4, 99, 7, 11] would have sum of 22
 
+ignore_this_number = 6
+restart_after_this_number = 7
+sum_of_numbers = 0
+
+for number in numbers:
+    if number == ignore_this_number:
+        continue
+    if number == 7:
+        break
+
+sum_of_numbers += number
+
+print(sum_of_numbers)
+    # if number == start_again_after_this_number:
+    #     number + 1 += sum_of_numbers
+
+
+
 
 
 
