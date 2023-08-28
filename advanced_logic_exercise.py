@@ -49,7 +49,7 @@ print(same_numbers)
 # sum_of_numbers = 0
 
 # for number in numbers:
-#     if number == ignore_this_number
+#     if number == ignore_this_number:
 #         continue
 
 # sum_of_numbers += number

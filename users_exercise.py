@@ -71,14 +71,16 @@ print(users["Erik"]["lottery_numbers"])
 print(users["Avril"]["pets"][0]["species"])
 
 # 5. Get the smallest of Erik's lottery numbers
-eriks_lottery_numbers = users["Erik"]["lottery_numbers"]
-smallest_lottery_number = eriks_lottery_numbers[0]
+# eriks_lottery_numbers = users["Erik"]["lottery_numbers"]
+# smallest_lottery_number = eriks_lottery_numbers[0]
 
-for number in eriks_lottery_numbers:
-    if number < smallest_lottery_number:
-        smallest_lottery_number = number
+# for number in eriks_lottery_numbers:
+#     if number < smallest_lottery_number:
+#         smallest_lottery_number = number
 
-print(smallest_lottery_number)
+# print(smallest_lottery_number)
+
+print(min(users["Erik"]["lottery_numbers"])) - #shorter method
 
 
 # 6. Return an list of Avril's lottery numbers that are even
