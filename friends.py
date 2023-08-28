@@ -158,10 +158,12 @@ print(person2["monies"])
 # OUTPUT: ["charcuterie", "soup", "bread", "Scooby snacks", "spaghetti", "ratatouille", "spinach"]
 
 def all_favourite_foods(people):
+    favourite_foods = []
     for person in people:
-        print(person["favourites"]["snacks"])
-    
-(all_favourite_foods(people))
+        for snack in person["favourites"]["snacks"]:
+            favourite_foods.append(snack)
+
+    return favourite_foods
 
 # 9. Define a function called find_no_friends(people) that returns a list of all the people that have a friends list of length 0.
 # INPUT: people
@@ -193,3 +195,9 @@ print(unique_favourite_tv_shows(people))
 
 
 # BONUS: Try to refactor the previous function to use Python's built-in set() function.
+def unique_favourite_tv_shows(people):
+
+    characters_favourite_tv_shows = []
+    for person in people:
+        characters_favourite_tv_shows.append(person["favourites"]["tv_show"])
+    return set(unique_favourite_tv_shows)
